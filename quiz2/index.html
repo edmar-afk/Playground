@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>CodePen - A Pen by Nil</title>
+  <link rel="stylesheet" href="./style.css">
+
+</head>
+<body>
+<!-- partial:index.partial.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Javascript Quiz</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="header">
+        <a id="view-highscores" href="#">View Highscores</a>
+        <div id="timer"></div>
+    </div>
+
+    <div class="main">
+
+        <div class="main-container" id="welcome-container">
+            <br><br>
+            <h1 id="welcome">Coding Quiz Challenge</h1>
+            <br>
+            <p id="information">Try to answer the following code-related questions within the time limit. Keep in mind that incorrect answer will penalize your score/time by ten seconds!</p>
+            <br>
+            <div class="buttons">
+                <button type="button" class="btn btn-primary rounded" id="start-quiz">Start Quiz</button>
+            </div>
+        </div>   
+
+        <div class="main-container" id="question-container">
+            <br><br>
+            <h1 id="quiz-question"></h1>
+            <br>
+            <div class="answer-buttons">
+                <button type="button" class="btn btn-primary rounded" id="opt1"></button>
+                <button type="button" class="btn btn-primary rounded" id="opt2"></button>
+                <button type="button" class="btn btn-primary rounded" id="opt3"></button>
+                <button type="button" class="btn btn-primary rounded" id="opt4"></button>
+
+                <!-- add classes for all buttons add event listener use for loop query selector all -->
+            </div>
+            <div id="correct-incorrect">
+
+            </div>
+        </div>
+        
+        <div class="main-container" id="all-done-container">
+            <h1>All Done!</h1>
+            <p id="final-score-p"></p>
+            <div class="form-inline">
+                <label for="initials">Enter initials:</label>
+                <input type="text" class="form-control form-control-sm" id="initials" aria-describedby="enter initials">
+                <button type="button" class="btn btn-primary btn-sm rounded" id="submit-highscore">Submit</button>
+            </div>
+        </div>
+
+        <div class="main-container" id="highscores-container">
+            <h1>Highscores</h1>
+            <ol id="highscores-list">
+
+            </ol>
+            <button type="button" class="btn btn-primary rounded" id="go-back">Go Back</button>
+            <button type="button" class="btn btn-primary rounded" id="clear-highscores">Clear Highscores</button>
+        </div>
+
+    </div>
+
+
+
+    <script src="script.js"></script>
+</body>
+</html>
+<!-- partial -->
+  <script  src="./script.js"></script>
+
+</body>
+</html>
